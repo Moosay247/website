@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# UEBL Wolves — basketball program website
 
-## Getting Started
+A responsive website for Chicago's Uptown Elite Basketball League (UEBL) and Wolves AAU program. This repository is the existing site project; the public repository is named `website`.
 
-First, run the development server:
+## What the site includes
+
+- Team galleries for 2018, 2022, 2023, 2024, All-Star events, and camp
+- About page covering the league and Wolves AAU program
+- Responsive navigation for desktop and mobile
+- Animated homepage, media sections, and calendar UI
+- Donate page and a shop-coming-soon page
+- Cart interface and reusable UI components
+
+The shop's “Notify Me” interaction currently displays a confirmation in the browser; this repository does not show a backend mailing-list integration. The README does not claim that payments or checkout are implemented.
+
+## Stack
+
+Next.js 14, React 18, JavaScript, Node.js, Tailwind CSS, Material UI, Framer Motion, and supporting UI libraries.
+
+## Run locally
+
+Requirements: a compatible Node.js installation and npm.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). For a production build:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Structure
 
-## Learn More
+- `src/app/` — pages and route segments
+- `src/app/team/` — team and event galleries
+- `src/components/ui/` — reusable UI elements
+- `public/` — images and videos used by the site
 
-To learn more about Next.js, take a look at the following resources:
+## Project context
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Built and maintained for UEBL Wolves, a youth basketball program in Chicago. The site presents program information and team history in one place. Development began in 2024 and is ongoing.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Live site: [ueblwolves.com](https://ueblwolves.com/)
